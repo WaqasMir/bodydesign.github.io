@@ -1,0 +1,252 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    #navbar::before {
+        background-color: rgb(3, 0, 0);
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 80%;
+        opacity: 0.2;
+        z-index: -1;
+    }
+    
+    #navbar ul {
+        display: flex;
+    }
+    
+    #navbar ul li {
+        list-style: none;
+    }
+    
+    #navbar ul li a {
+        font-family: 'Baloo Chettan 2', cursive;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    #navbar ul li a:hover {
+        background-color: white;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        height: 10rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        color: white;
+        font-family: 'Baloo Chettan 2', cursive;
+        font-size: 2.5rem;
+    }
+    
+    .home::before {
+        content: "";
+        position: absolute;
+        background: url(/image/moscow-3550477_1920.jpg) no-repeat center center/cover;
+        height: 24rem;
+        width: 100%;
+        opacity: 0.9;
+        z-index: -1;
+        margin-top: 6rem;
+    }
+    
+    article {
+        font-family: 'Baloo Chettan 2', cursive;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    article+button {
+        font-family: 'Baloo Chettan 2', cursive;
+        margin-top: 15px;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 5px;
+        color: whitesmoke;
+        background-color: rgb(26, 109, 156);
+        border: none;
+        border-radius: 10px;
+    }
+    
+    article+button:hover {
+        background-color: whitesmoke;
+        color: rgb(104, 83, 52);
+    }
+    
+    .text-big {
+        font-family: 'Baloo Chettan 2', cursive;
+        margin: 8rem;
+        text-align: center;
+        font-size: 3rem;
+        color: #1A237D;
+    }
+    
+    .container {
+        display: flex;
+        margin-top: -8rem;
+        width: 100%;
+        height: 25rem
+    }
+    
+    .house1 {
+        background-color: whitesmoke;
+        margin-left: 2rem;
+        border: none;
+        opacity: 0.8;
+        height: 29rem;
+        font-family: 'Baloo Chettan 2', cursive;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+    
+    .house1 img {
+        position: relative;
+        top: 8px;
+        height: 15rem;
+        width: 24rem;
+        display: block;
+        margin: auto;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    h2 {
+        padding-left: 1rem;
+        font-size: 2rem;
+        font-family: 'Baloo Chettan 2', cursive;
+        margin-top: 10px;
+    }
+    
+    footer {
+        display: flex;
+        height: 10rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    footer img {
+        height: 4rem;
+        width: 4rem;
+        cursor: pointer;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .small-text {
+        padding-left: 1rem;
+    }
+    
+    .btn {
+        cursor: pointer;
+        width: 5rem;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        border: .5px #1A237D solid;
+        border-radius: 7px;
+    }
+    
+    .price-card {
+        height: 5rem;
+        background-color: darkblue;
+    }
+    
+    .info-text {
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFF;
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
+    
+    .price-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #FFF;
+        padding-left: 3rem;
+    }
+    
+    .house2 {
+        display: flex;
+        flex-direction: row;
+        background-color: #EDEFF4;
+        margin-left: 4.5rem;
+        margin-top: 6rem;
+        border: none;
+        opacity: 0.8;
+        width: 90vw;
+        font-size: 1rem;
+    }
+    
+    .house2 img {
+        position: relative;
+        height: 20rem;
+        width: 30rem;
+        display: block;
+    }
+    
+    .house2-text {
+        color: #1A237D;
+        padding-top: 5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .house2-info {
+        margin-left: 8rem;
+        max-width: 25rem;
+        text-align: center;
+    }
+    
+    .value-btn {
+        font-weight: 700;
+        border: 1px solid #d204cf;
+        font-size: 13px;
+        padding: 9px;
+        border-radius: 1rem;
+        background-color: #EDEFF4;
+        margin-top: 1rem;
+        margin-left: 7rem;
+        cursor: pointer;
+        color: #d204cf;
+    }
+    
+    .value-btn:hover {
+        color: #102f96;
+    }
